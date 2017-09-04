@@ -233,6 +233,9 @@ on post-fs-data
 
     setprop vold.post_fs_data_done 1
 
+    # NFC
+    chown nfc nfc /dev/pn54x
+
 on property:sys.boot_completed=1
     # Enable UFS clock scaling back
     write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 1
