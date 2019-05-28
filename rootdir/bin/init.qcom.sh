@@ -52,3 +52,6 @@ chmod g-w /data/vendor/modem_config
 setprop ro.vendor.ril.mbn_copy_completed 1
 
 pm disable com.google.android.gms/.chimera.GmsIntentOperationService
+
+# Clear packages_cache to avoid systemapp have mismatch strings id
+rm -rf /data/system/package_cache
