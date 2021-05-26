@@ -15,6 +15,7 @@
 -->
 
 <resources>
+
     <!-- The number of vibration intensity levels supported by the device.
          Note that this should correspond to the ability to vary the vibration amplitude, with
          enough dynamic range to have at least as many distinct intensity levels as defined here.
@@ -36,5 +37,8 @@
     <string name="config_batteryCalculatedCapacity">/sys/class/power_supply/battery/charge_full</string>
     <string name="config_batteryChargeCycles">/sys/class/power_supply/battery/cycle_count</string>
     <string name="config_batteryDesignCapacity">/sys/class/power_supply/battery/charge_full_design</string>
-    
+
+    <!-- Smart Charging -->
+    <bool name="config_supportSmartCharging">true</bool>
+
 </resources>
