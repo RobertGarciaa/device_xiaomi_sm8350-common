@@ -1,5 +1,6 @@
-# Bluetooth
+# Bluetooth=
 persist.vendor.btstack.enable.lpa=true
+persist.vendor.btstack.enable.twsplus=true
 vendor.bluetooth.soc=hastings
 
 # Charger
