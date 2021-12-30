@@ -634,4 +634,6 @@
     <!-- Auto-brightness sensor type string -->
     <string name="config_displayLightSensorType">android.sensor.light</string>
 
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">false</bool>
 </resources>
