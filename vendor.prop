@@ -140,6 +140,7 @@ persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
+persist.vendor.btstack.enable.lpa=true
 ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
