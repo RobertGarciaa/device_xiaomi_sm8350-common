@@ -21,3 +21,5 @@ persist.vendor.sys.provision.status     u:object_r:vendor_mlipay_prop:s0
 
 # Thermal
 vendor.sys.thermal.                u:object_r:vendor_thermal_normal_prop:s0
+
+ro.vendor.gfx.32bit.target                u:object_r:vendor_default_prop:s0
