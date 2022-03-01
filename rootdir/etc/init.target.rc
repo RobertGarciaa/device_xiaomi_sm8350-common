@@ -207,7 +207,7 @@ service vendor.lowi /vendor/bin/lowirpcd
    class core
    user system
    group system wakelock
-   capabilities BLOCK_SUSPEND
+   disabled
 
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
