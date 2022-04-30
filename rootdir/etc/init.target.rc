@@ -147,6 +147,9 @@ on boot
     chmod 0666 /dev/stune/background/cgroup.procs
     chmod 0666 /dev/stune/top-app/cgroup.procs
 
+    # Set thermal mode to evaluation
+    write /sys/class/thermal/thermal_message/sconfig 10
+
     # Set xiaomi touch permissions
     chown system system /dev/xiaomi-touch
     chmod 0660 /dev/xiaomi-touch
