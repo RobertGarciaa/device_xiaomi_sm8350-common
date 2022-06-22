@@ -162,6 +162,12 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
+# Diag
+vendor/bin/diag-router|5c9aae5c2a644cc7d81601cc9eccde8e47e12e0f
+vendor/lib64/vendor.qti.diaghal@1.0.so|f1080f6afda99c04fbf09573430276d284e2b633
+vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml|cd7745bb829bc9bfb8a23ba779c796384e9b3835
+vendor/etc/init/vendor.qti.diag.rc|0d851631208906b3972b16e1683f07d5582e0030
+
 # DPM
 system/framework/tcmclient.jar
 system_ext/bin/dpmd
