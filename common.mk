@@ -447,7 +447,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
+    android.hardware.power-service.lahaina-libperfmgr \
     android.hardware.power@1.2.vendor
 
 PRODUCT_COPY_FILES += \
@@ -502,7 +502,9 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
+    hardware/xiaomi \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # Telephony
 PRODUCT_PACKAGES += \
