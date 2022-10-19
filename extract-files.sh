@@ -65,9 +65,7 @@ function blob_fixup() {
             ;;
         vendor/bin/hw/dolbycodec2)
             patchelf --replace-needed libavservices_minijail_vendor.so libavservices_minijail.so "${2}"
-            ;;
-        vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
-            sed -ni '/ozoaudio/!p' "${2}"
+            patchelf --replace-needed libcodec2_hidl@1.0.so libcodec2_hidl@1.0.stock.so "${2}"
             ;;
         vendor/lib64/android.hardware.secure_element@1.0-impl.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
@@ -75,6 +73,13 @@ function blob_fixup() {
 	vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             hexdump -ve '1/1 "%.2X"' "${2}" | sed "s/8D0A0094AE1640F9/1F2003D5AE1640F9/g" | xxd -r -p > "${TMPDIR}/${1##*/}"
             mv "${TMPDIR}/${1##*/}" "${2}"
+            ;;
+        vendor/lib/libcodec2_hidl@1.0.stock.so)
+            patchelf --set-soname libcodec2_hidl@1.0.stock.so "${2}"
+            patchelf --replace-needed libcodec2_vndk.so libcodec2_vndk.stock.so "${2}"
+            ;;
+        vendor/lib/libcodec2_vndk.stock.so)
+            patchelf --set-soname libcodec2_vndk.stock.so "${2}"
             ;;
         vendor/lib64/hw/camera.xiaomi.so)
             # Before
