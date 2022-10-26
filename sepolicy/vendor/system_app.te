@@ -2,3 +2,8 @@
 get_prop(system_app, vendor_aware_available_prop);
 
 allow system_app proc_pagetypeinfo:file r_file_perms;
+
+binder_call(system_app, hal_power_default)
+binder_call(system_app, hal_audio_default)
+binder_call(system_app, hal_vibrator_default)
+binder_call(system_app, hal_wifi_supplicant_default)
