@@ -312,7 +312,7 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be4
 # IMS - from LA.QSSI.13.0.r1-05300-qssi.0
 -system_ext/app/ImsRcsService/ImsRcsService.apk|c0566bd1093cc281df903f64f62945088d14087b
 -system_ext/app/uceShimService/uceShimService.apk|d6de9593cf743440f861f041d4724ec9488e4139
--system_ext/priv-app/ims/ims.apk|9dd8f0bbe724abe8ea50e653290a2192742205df
+-system_ext/priv-app/ims/ims.apk|d45c6e3edbe97bb24d316396e14bca1ba1ffd525
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|bd9fc166b542b4e730f194ebc996957770d9d497
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|b40fc74f7d5e58b4e918f952b89a79cf2a5c4088
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml|bfceff47fb0b55a418bed71de6050d876a776ac7
