@@ -448,8 +448,6 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 
 # Media
-vendor/etc/media_codecs_with_dolby_yupik.xml
-vendor/etc/media_codecs_with_dolby_shima.xml
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/media/video_system_specs.json
