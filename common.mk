@@ -144,11 +144,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
-# Codec2
-PRODUCT_PACKAGES += \
-    libcodec2_vndk.vendor \
-    libcodec2_hidl@1.0.vendor
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
@@ -302,6 +297,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    libcodec2_hidl@1.0.vendor \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
