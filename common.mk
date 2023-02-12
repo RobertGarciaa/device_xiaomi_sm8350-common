@@ -302,13 +302,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
-    android.hardware.media.omx@1.0-service \
-    libminijail \
-    libavservices_minijail_32 \
-    libavservices_minijail.vendor \
-    libcodec2_vndk.vendor \
-    libcodec2_hidl@1.1.vendor \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
@@ -316,11 +309,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libstagefrighthw \
-    libstagefright_omx.vendor \
-    libmm-omxcore \
     libstagefrighthw \
     libstagefright_omx \
     libstagefright_foundation \
@@ -366,9 +354,7 @@ PRODUCT_PACKAGES += \
 # Minijail
 PRODUCT_PACKAGES += \
     libavservices_minijail \
-    libavservices_minijail.vendor \
-    libcodec2_soft_common.vendor \
-    libsfplugin_ccodec_utils.vendor
+    libavservices_minijail.vendor
 
 # Network
 PRODUCT_COPY_FILES += \
