@@ -103,8 +103,8 @@ function configure_memory_parameters() {
         # wsf Range : 1..1000. So set to bare minimum value 1.
         echo 1 > /proc/sys/vm/watermark_scale_factor
 
-	#Spawn 2 kswapd threads which can help in fast reclaiming of pages
-	echo 2 > /proc/sys/vm/kswapd_threads
+	#Spawn 1 kswapd threads which can help in fast reclaiming of pages
+	echo 1 > /proc/sys/vm/kswapd_threads
 }
 
 rev=`cat /sys/devices/soc0/revision`
@@ -149,6 +149,9 @@ echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
 echo 0 > /proc/sys/kernel/sched_coloc_busy_hysteresis_enable_cpus
 
+#disable untrustedapp
+echo " " > /dev/cpuset/background/untrustedapp/cpus
+
 # configure governor settings for silver cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
@@ -156,6 +159,11 @@ echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
 echo 1171200 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
 echo 691200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
+
+#default
+# configure input boost settings
+echo "0:1382800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
+echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
 
 # configure governor settings for gold cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
