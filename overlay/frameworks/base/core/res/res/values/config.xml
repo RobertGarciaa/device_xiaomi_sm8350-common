@@ -378,4 +378,6 @@
           <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
      </string-array>
 
+    <!-- See AmbientSensor.AmbientColorTemperatureSensor. The ambient color temperature sensor name. -->
+    <string name="config_displayWhiteBalanceColorTemperatureSensorName">com.google.sensor.color</string>
 </resources>
