@@ -543,7 +543,7 @@ vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|6b5a8ca7b57e6515882dab290028c76
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|d7dc9aa34d48ed62f469a89bb84554cbc72f44aa
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
 vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
-vendor/etc/perf/commonsysnodesconfigs.xml|77ea36edec83f67f5c5591f36bd0f75e361db097
+vendor/etc/perf/commonsysnodesconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml|8e4e7a0eca8040e600b2f65a38d3b6ca017a26ff
 vendor/etc/perf/perfconfigstore.xml|665105d2e39cf00c9508c8e7af89583bcbdcedb5
 vendor/etc/perf/targetconfig.xml|33128deb6c62a8cecf491c6c0c13d18e811cfe81
