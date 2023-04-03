@@ -542,11 +542,9 @@ vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|6b5a8ca7b57e6515882dab290028c76
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|d7dc9aa34d48ed62f469a89bb84554cbc72f44aa
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
 vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
-vendor/etc/perf/commonsysnodesconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml|8e4e7a0eca8040e600b2f65a38d3b6ca017a26ff
 vendor/etc/perf/targetconfig.xml|33128deb6c62a8cecf491c6c0c13d18e811cfe81
 vendor/etc/perf/targetresourceconfigs.xml|6447c05b552dbea7492b6cf28082a8d33996ec0a
-vendor/etc/powerhint.xml|1f8e78bf27fca62fa7e65b5a3bbac506a31a301c
 vendor/lib/libperfconfig.so|537c5677f965b6c652729c2a1287700126bb811f
 vendor/lib/libperfgluelayer.so|98fb1db13c1bb9c4d27b40c335146b52d7c80af5
 vendor/lib/libperfioctl.so|47c985388005e08a2af46e5dcba87e90608a8ec1
