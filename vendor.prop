@@ -168,7 +168,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 vendor.gatekeeper.disable_spu=true
 
 # Graphics
-debug.hwui.renderer=skiavk
+debug.hwui.renderer=opengl
 debug.egl.hw=1
 debug.mdpcomp.logs=0
 debug.sf.auto_latch_unsignaled=true
