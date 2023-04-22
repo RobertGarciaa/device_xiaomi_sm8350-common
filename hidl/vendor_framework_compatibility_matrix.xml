@@ -892,4 +892,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>sxrhalservice</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.bluetooth</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IBluetoothHci</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
