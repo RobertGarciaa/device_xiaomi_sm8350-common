@@ -208,6 +208,9 @@ SOONG_CONFIG_xiaomiSm8350Vars += \
     vibrator_use_effect_stream
 SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream ?= false
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
