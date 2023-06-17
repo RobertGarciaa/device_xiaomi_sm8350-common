@@ -1,2 +1,5 @@
 # Walt
 type proc_walt, fs_type, proc_type;
+
+# Power HAL
+type vendor_sysfs_schedutil, sysfs_type, fs_type;
