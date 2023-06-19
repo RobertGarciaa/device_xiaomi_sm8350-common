@@ -97,6 +97,7 @@
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
         "999999999",
+        "443000000",
         "285000000"
       ],
       "ResetOnInit": true
@@ -333,7 +334,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "285000000"
+      "Value": "443000000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
