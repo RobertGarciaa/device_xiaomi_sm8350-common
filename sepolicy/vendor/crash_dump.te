@@ -1,0 +1,1 @@
+allow crash_dump surfaceflinger:unix_stream_socket { read write };
