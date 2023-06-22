@@ -33,15 +33,14 @@ on property:vendor.post_boot.parsed=1
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
     setprop dalvik.vm.dex2oat-threads 6
 
-    # Configure CPU input boost
-    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1305600"
-    write /sys/devices/system/cpu/cpu_boost/input_boost_ms 150
-
     # Configure scheduler
     write /proc/sys/kernel/sched_upmigrate "65 85"
     write /proc/sys/kernel/sched_downmigrate "60 75"
     write /proc/sys/kernel/sched_group_upmigrate 95
     write /proc/sys/kernel/sched_group_downmigrate 75
+    write /proc/sys/kernel/sched_prefer_spread 2
+    write /proc/sys/kernel/walt_low_latency_task_threshold 100
+    write /proc/sys/kernel/walt_rtg_cfs_boost_prio 119
 
     # Configure uclamp
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
