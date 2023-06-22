@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from haydn V14.0.3.0.TKKMIXM
+# All unpinned blobs below are extracted from haydn V14.0.5.0.TKKMIXM
 
 # ADSP
 vendor/bin/adsprpcd
@@ -309,7 +309,7 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IMS - from LA.QSSI.13.0.r1-09000-qssi.0
 -system_ext/app/ImsRcsService/ImsRcsService.apk|17ea49a0462c5e88ed1d0913a3156e87b5568207
--system_ext/priv-app/ims/ims.apk|3c6f0bfeba8ecda785b9dc7b707faf3f5a461058
+-system_ext/priv-app/ims/ims.apk|7acb93d1e894fe021aa58922128be2cc475c822b
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|bd9fc166b542b4e730f194ebc996957770d9d497
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|b40fc74f7d5e58b4e918f952b89a79cf2a5c4088
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml|bfceff47fb0b55a418bed71de6050d876a776ac7
