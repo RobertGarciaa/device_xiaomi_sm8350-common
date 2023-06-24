@@ -189,6 +189,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += Settings
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.systemuicompilerfilter=speed
 
+# Dialer
+PRODUCT_PACKAGES += \
+    Dialer
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
