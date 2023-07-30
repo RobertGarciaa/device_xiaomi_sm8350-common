@@ -77,7 +77,9 @@ function blob_fixup() {
         vendor/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc)
             sed -i "/    group system/ a\    disabled" "${2}"
             ;;
-
+        vendor/etc/init/vendor.qti.rmt_storage.rc)
+            sed -i "/shutdown critical/ i\    group system wakelock" "${2}"
+            ;;
     esac
 }
 
