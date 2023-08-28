@@ -82,6 +82,9 @@
 # Media
 /vendor/bin/hw/dolbycodec2                           u:object_r:mediacodec_exec:s0
 
+# Sys files (wakeup)
+/sys/devices(/platform)?/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:sound/Listen.[0-9]+.Audio.Service/wakeup(/.*)? u:object_r:sysfs_wakeup:s0
+
 # Thermal
 /data/vendor/thermal(/.*)?                           u:object_r:thermal_data_file:s0
 /vendor/bin/mi_thermald                              u:object_r:mi_thermald_exec:s0
