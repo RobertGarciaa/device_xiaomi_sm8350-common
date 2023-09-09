@@ -152,6 +152,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8350/display/config/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
 
+# Dolby
+$(call inherit-product, vendor/xiaomi/dolby/config.mk)
+
+PRODUCT_PACKAGES += \
+    DSPVolumeSynchronizer
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
