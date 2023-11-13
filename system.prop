@@ -4,9 +4,6 @@ persist.vendor.btstack.enable.twsplussho=true
 persist.vendor.bt.a2dp.hal.implementation=true
 vendor.bluetooth.soc=hastings
 
-# Charger
-ro.charger.enable_suspend=true
-
 # CNE
 persist.vendor.cne.feature=1
 
