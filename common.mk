@@ -129,7 +129,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
-    libmegface_vendor \
     libcamera2ndk_vendor \
     libion.vendor \
     libgui_vendor
