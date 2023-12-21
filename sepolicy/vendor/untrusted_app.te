@@ -7,3 +7,5 @@ dontaudit untrusted_app_all cache_file:lnk_file { read };
 
 dontaudit untrusted_app_all proc_loadavg:file { read };
 dontaudit untrusted_app_all device:file { read };
+
+allow untrusted_app vendor_diag_device:chr_file rw_file_perms;
