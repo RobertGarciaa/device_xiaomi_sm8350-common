@@ -1,2 +1,5 @@
 # eBPF
 ro.bpf.kver_override=5.10.239
+
+# Bluetooth
+bluetooth.device_id.vendor_id=0x001D
