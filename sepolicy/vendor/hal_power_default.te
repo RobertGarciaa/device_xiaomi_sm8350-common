@@ -8,3 +8,6 @@ allow hal_power_default proc_walt:dir search;
 allow hal_power_default proc_walt:file rw_file_perms;
 allow hal_power_default vendor_sysfs_msm_perf:dir search;
 allow hal_power_default vendor_sysfs_msm_perf:file rw_file_perms;
+
+# Allow power HAL to access xiaomi-touch to provide dt2w service
+allow hal_power_default vendor_touchfeature_device:chr_file rw_file_perms;
