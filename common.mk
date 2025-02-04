@@ -158,6 +158,9 @@ $(call inherit-product, vendor/xiaomi/dolby/config.mk)
 PRODUCT_PACKAGES += \
     DSPVolumeSynchronizer
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/init.dolby_fix.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.dolby_fix.sh
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
