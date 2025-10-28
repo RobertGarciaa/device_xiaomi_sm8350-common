@@ -90,7 +90,7 @@ $(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
+    FILESYSTEM_TYPE_system=erofs \
     POSTINSTALL_OPTIONAL_system=true
 
 AB_OTA_POSTINSTALL_CONFIG += \
