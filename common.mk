@@ -152,6 +152,27 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8350/display/config/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
 
+# Display (MIUI Camera)
+PRODUCT_PACKAGES += \
+    vendor.display.config@1.0 \
+    vendor.display.config@1.0.vendor \
+    vendor.display.config@1.1 \
+    vendor.display.config@1.1.vendor \
+    vendor.display.config@1.2 \
+    vendor.display.config@1.2.vendor \
+    vendor.display.config@1.3 \
+    vendor.display.config@1.3.vendor \
+    vendor.display.config@1.4 \
+    vendor.display.config@1.4.vendor \
+    vendor.display.config@1.5 \
+    vendor.display.config@1.5.vendor \
+    vendor.display.config@1.6 \
+    vendor.display.config@1.6.vendor \
+    vendor.display.config@1.7 \
+    vendor.display.config@1.7.vendor \
+    vendor.display.config@1.8 \
+    vendor.display.config@1.8.vendor
+
 # Dolby
 $(call inherit-product, vendor/xiaomi/dolby/config.mk)
 
